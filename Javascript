@@ -1,0 +1,16 @@
+
+const minhaDiv = document.getElementById("minhaDiv");
+const meuBotao = document.getElementById("meuBotao");
+
+
+function alterarConteudo() {
+
+    if (minhaDiv.textContent === "Este é o conteúdo original da div.") {
+        minhaDiv.textContent = "O conteúdo foi alterado!";
+    } else {
+        minhaDiv.textContent = "Este é o conteúdo original da div.";
+    }
+}
+
+
+meuBotao.addEventListener("click", alterarConteudo);
